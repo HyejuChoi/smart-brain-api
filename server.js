@@ -12,11 +12,12 @@ const profile = require('./controllers/profile');
 const db = knex({
     client: 'pg',
     connection: {
-      host : process.env.DATABASE_HOST,
+      connectionString: 'postgres://mydb_c8ev_user:95s20DcYWBFEmI9wIKqaNCkiqNeYPhZP@dpg-cn0hjh6v3ddc73c208dg-a/mydb_c8ev',
+      host : 'dpg-cn0hjh6v3ddc73c208dg-a',
       port : 5432,
-      user : process.env.DATABASE_USER,
-      password : process.env.DATABASE_PW,
-      database : process.env.DATABASE_DB
+      user : 'mydb_c8ev_user',
+      password : '95s20DcYWBFEmI9wIKqaNCkiqNeYPhZP',
+      database : 'mydb_c8ev'
     }
 })
 
